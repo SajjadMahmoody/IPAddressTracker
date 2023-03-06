@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPAddressTracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header class="header-section">
+    <div class="container">
+      <div class="header-title">
+        <h1>Ip Address Tracker</h1>
+      </div>
+      <form id="frm">
+        <div class="d-flex justify-content-center input-section">
+          <input type="text" class="input-search" placeholder="Search for any IP address or domain" id="currentIp"
+            maxlength="15" />
+          <button type="submit" id="btn">
+            <img src="./assets/media/images/icon-arrow.svg" />
+          </button>
+        </div>
+      </form>
+      <div class="d-flex justify-content-center">
+        <div class="info-card">
+          <div class="row">
+            <div class="col-lg-3 border-right">
+              <div class="info-title">ip address</div>
+              <div class="info-content">
+                <h4 id="ipAddress"></h4>
+              </div>
+            </div>
+            <div class="col-lg-3 border-right">
+              <div class="info-title">location</div>
+              <div class="info-content">
+                <h4 id="location"></h4>
+              </div>
+            </div>
+            <div class="col-lg-3 border-right">
+              <div class="info-title">Time Zone</div>
+              <div class="info-content">
+                <h4 id="timeZone"></h4>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="info-title">isp</div>
+              <div class="info-content">
+                <h4 id="isp"></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div id="map"></div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

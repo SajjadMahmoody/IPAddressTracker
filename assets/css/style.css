@@ -1,0 +1,131 @@
+body {
+  font-family: "Rubik";
+}
+
+.header-section {
+  background: url("../media/images/pattern-bg-desktop.png") no-repeat top center/cover;
+  height: 260px;
+  max-height: 100%;
+}
+
+.header-title {
+  text-align: center;
+  color: white;
+  padding-block: 1rem;
+}
+.header-title h1 {
+  font-size: 2rem !important;
+}
+
+.input-section {
+  padding-block: 1rem;
+  padding-bottom: 4rem;
+}
+.input-section input {
+  width: min(400px, 100%);
+  height: 45px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  font-size: 18px;
+  padding-left: 1rem;
+}
+.input-section input:focus {
+  border: none;
+  outline: 0;
+  padding-left: 1rem;
+}
+.input-section input::-moz-placeholder {
+  padding-left: 0.5rem;
+  color: hsl(0, 0%, 59%);
+}
+.input-section input::placeholder {
+  padding-left: 0.5rem;
+  color: hsl(0, 0%, 59%);
+}
+.input-section button {
+  border: none;
+  width: 50px;
+  background-color: hsl(0, 0%, 17%);
+  border-radius: 0 10px 10px 0;
+  transition: 0.5s all ease-in;
+}
+.input-section button:hover {
+  opacity: 90%;
+}
+
+.info-card {
+  position: relative;
+  width: 98%;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.info-title {
+  color: hsl(0, 0%, 59%);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.info-content {
+  color: black;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.info-content > h4 {
+  font-size: 1rem;
+}
+
+#map {
+  height: 80vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.border-right {
+  border-right: 1px solid hsl(0, 0%, 59%);
+}
+
+@media screen and (max-width: 768px) {
+  .header-section {
+    background-image: url("../media/images/pattern-bg-mobile.png");
+  }
+  .border-right {
+    border: none;
+  }
+  .input-section {
+    padding-bottom: 1rem;
+  }
+  .input-section input {
+    width: min(400px, 100%);
+    height: 45px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 18px;
+    padding-left: 1rem;
+    font-size: 15px;
+  }
+  .input-section input:focus {
+    border: none;
+    outline: 0;
+    padding-left: 1rem;
+  }
+  .input-section input::-moz-placeholder {
+    padding-left: 0.5rem;
+    color: hsl(0, 0%, 59%);
+  }
+  .input-section input::placeholder {
+    padding-left: 0.5rem;
+    color: hsl(0, 0%, 59%);
+  }
+}
+@media screen and (max-width: 992px) {
+  .border-right {
+    border: none;
+  }
+}/*# sourceMappingURL=style.css.map */
